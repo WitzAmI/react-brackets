@@ -18,11 +18,11 @@ test('Works with multiple rounds', () => {
       seeds: [
         {
           id: 1,
-          teams: [{ name: 'Team 1' }, { name: 'Team 2' }],
+          teams: [{ name: 'Team 1', wins: 4, seedNumber: 1, winner: true }, { name: 'Team 2', wins: 1, seedNumber: 4, winner: false }],
         },
         {
           id: 2,
-          teams: [{ name: 'Team 3' }, { name: 'Team 4' }],
+          teams: [{ name: 'Team 3', wins: 3, seedNumber: 2, winner: false }, { name: 'Team 4', wins: 4, seedNumber: 3, winner: true }],
         },
       ],
     },
@@ -31,7 +31,7 @@ test('Works with multiple rounds', () => {
       seeds: [
         {
           id: 3,
-          teams: [{ name: 'Team 1' }, { name: 'Team 4' }],
+          teams: [{ name: 'Team 1', wins: 4, seedNumber: 1, winner: true }, { name: 'Team 4', wins: 2, seedNumber: 3, winner: false  }],
         },
       ],
     },

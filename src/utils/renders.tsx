@@ -1,5 +1,5 @@
 import React from 'react';
-import { Seed, SeedItem, SeedTeam, SeedTime } from '../components/seed';
+import { Seed, SeedItem, SeedTeam, SeedTime, SeedWins, SeedNumber } from '../components/seed';
 import { RoundTitle } from '../components/round';
 import { IRenderSeedProps } from '../types/Seed';
 
@@ -12,8 +12,8 @@ export const renderSeed = ({ seed, breakpoint }: IRenderSeedProps) => {
     <Seed mobileBreakpoint={breakpoint}>
       <SeedItem>
         <div>
-          <SeedTeam>{seed.teams?.[0]?.name || '-----------'}</SeedTeam>
-          <SeedTeam>{seed.teams?.[1]?.name || '-----------'}</SeedTeam>
+          <SeedNumber>{seed.teams?.[0]?.seedNumber || "-"}</SeedNumber><SeedTeam>{seed.teams?.[0]?.name || '-----------'}</SeedTeam><SeedWins>{seed.teams?.[0]?.wins || "-"}</SeedWins>
+          <SeedNumber>{seed.teams?.[1]?.seedNumber || "-"}</SeedNumber><SeedTeam>{seed.teams?.[1]?.name || '-----------'}</SeedTeam><SeedWins>{seed.teams?.[0]?.wins || "-"}</SeedWins>
         </div>
       </SeedItem>
       <SeedTime mobileBreakpoint={breakpoint}>{seed?.date}</SeedTime>

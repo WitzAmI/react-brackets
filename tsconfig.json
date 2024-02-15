@@ -30,7 +30,7 @@
   },
   "include": [
     "src"
-  ],
+, "gulpfile.js"  ],
   "exclude": [
     "node_modules",
     "dist",

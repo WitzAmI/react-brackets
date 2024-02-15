@@ -21,6 +21,24 @@ export const SeedTeam = styled.div`
   align-items: center;
 `;
 
+export const SeedNumber = styled.div`
+  padding: 0.3rem 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  border-radius: 0.2em;
+  align-items: left;
+`;
+
+export const SeedWins = styled.div`
+  padding: 0.3rem 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: right;
+  border-radius: 0.2em;
+  align-items: right;
+`;
+
 export const SeedTime = styled.div<ISeedProps>(
   (props) => `
 margin-top: 2px;
